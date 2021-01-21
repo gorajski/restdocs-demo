@@ -1,0 +1,30 @@
+= Prospector API
+
+There's gold in them thar hills!
+
+== String Endpoint
+
+This returns a basic string of HTML.
+
+.request
+include::{snippets}/string-endpoint/http-request.adoc[]
+
+.curl
+include::{snippets}/string-endpoint/curl-request.adoc[]
+
+.response
+include::{snippets}/string-endpoint/http-response.adoc[]
+
+== JSON Endpoint
+
+This returns a JSON object body.
+
+.request
+include::{snippets}/json-endpoint/http-request.adoc[]
+
+.curl
+include::{snippets}/json-endpoint/curl-request.adoc[]
+
+.response
+include::{snippets}/json-endpoint/http-response.adoc[]
+
