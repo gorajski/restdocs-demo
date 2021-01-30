@@ -9,11 +9,11 @@ public class MainController {
 
     @GetMapping("/string")
     public String getMain() {
-        return "<h1>Gimme some more</h1>";
+        return "<h1>String of gems and pearls</h1>";
     }
 
     @GetMapping("/json")
     public MyJsonObject getJson() {
-        return new MyJsonObject("strawberry forever");
+        return new MyJsonObject("of gold and silver");
     }
 }

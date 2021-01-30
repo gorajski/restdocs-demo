@@ -25,7 +25,7 @@ class MainControllerTest {
     void getString_returnsHtmlString_whenStringEndpointIsCalled() throws Exception {
         mockMvc.perform(get("/string"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("<h1>Gimme some more</h1>")))
+                .andExpect(content().string(containsString("<h1>String of gems and pearls</h1>")))
                 .andDo(document("string-endpoint"));
     }
 
@@ -33,7 +33,7 @@ class MainControllerTest {
     void getJson_returnsJsonObject_whenJsonEndpointIsCalled() throws Exception {
         mockMvc.perform(get("/json"))
                 .andExpect(status().isOk())
-                .andExpect(content().json("{\"field\": \"strawberry forever\"}"))
+                .andExpect(content().json("{\"field\": \"of gold and silver\"}"))
                 .andDo(document("json-endpoint",
                         responseFields(
                                 fieldWithPath("field").description("You can describe what an arbitrary field is for here.")
